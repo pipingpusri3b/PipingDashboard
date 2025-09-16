@@ -21,13 +21,13 @@
       api: 'derivativeV2_EU',     // EU API
       getAccessToken: async (onTokenReady) => {
         // sementara pakai placeholder
-        const accessToken = "eyJhbGciOiJSUzI1NiIsImtpZCI6IlZiakZvUzhQU3lYODQyMV95dndvRUdRdFJEa19SUzI1NiIsInBpLmF0bSI6ImFzc2MifQ.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiYnVja2V0OmNyZWF0ZSIsImJ1Y2tldDpyZWFkIl0sImNsaWVudF9pZCI6InZrQlhXWkxPQlBOOFRZMGNvNW1HTFBISXdMb0lLa0pOM1Zhclo2RWNFOHB1V01mcyIsImlzcyI6Imh0dHBzOi8vZGV2ZWxvcGVyLmFwaS5hdXRvZGVzay5jb20iLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbSIsImp0aSI6IlVWN0k0a0dWeUhRRDdValo3OEtPQzBleVpwOWJGY1pFRXVyTFpMQWh5bmFNb3kzUlJ2Q3FBYWxlMlZuT2t0bzgiLCJleHAiOjE3NTc1NjE1NjN9.iJGgSab62m7XFa_nKxR_-EnVQH5wu8H-EeVOYI66pSTDbqMA7OEkXbJUOiSE_WlyFD0Lzb0by4TL-XzWPrp-Jeonuz_lZxakpPo467ijcR1RJqSr7kjkThHy04Z39TvXnxFvEtQ9Xs92vQkaKQ4zukAq7BGHWfKPYXyYLpRrN8gx2N__LlCxKuT34RsJ5Lf91r-1rjc8BxbyXi-G4doaE1c0rHfSgQy_wvNLoG4C00lW2gMWSN1A6_8-TyA0EVwP4oOQ3MvcyE-E__Fpxf7O77OsDo9ywJLPGUXdPVe07_GdyYe2lkbYc_FjzTo8Ozbuqe90V5fn-lJG8avPcuVH0A";
+        const accessToken = "eyJhbGciOiJSUzI1NiIsImtpZCI6IlZiakZvUzhQU3lYODQyMV95dndvRUdRdFJEa19SUzI1NiIsInBpLmF0bSI6ImFzc2MifQ.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiYnVja2V0OmNyZWF0ZSIsImJ1Y2tldDpyZWFkIl0sImNsaWVudF9pZCI6InZrQlhXWkxPQlBOOFRZMGNvNW1HTFBISXdMb0lLa0pOM1Zhclo2RWNFOHB1V01mcyIsImlzcyI6Imh0dHBzOi8vZGV2ZWxvcGVyLmFwaS5hdXRvZGVzay5jb20iLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbSIsImp0aSI6IkdWdHhDWTF1cU9ENUM0WVA1TXdMN3VKZDV3WWs5dWtTRVdYV1RIeXJyVUxLVTRNemhFb1MwbUcxRjUwYWg5V0ciLCJleHAiOjE3NTgwMjA2NDZ9.GpbRCDkQekhSAWmsrJCwJk37Nu30QLz6eLF3xDCU7royBDohskpU1FYYvxd49y_xNTg47aOl9fSOe5OWglqaPVcrkjQ14ujyTxmYI7C1sHDo2IkCpQWZcLMCVAt3DoO8snZO3pYjPizQjvb-U1bql9hzsW2PzTdxXyvzq-fgohQ0N88VMRcQmfcLlwC6q6bFKF1E4tFlMky2XtBe5z5gF8g8P3jgcskRyR9yHzPk5CZx40bw_RYDSPa69O2HQbOjzatUpToe27qH3wcsy0K7NFzv0XNNiT4AhXMSAoJVFCXbSEBTYJfQKqpJ92c-hHuzeWLhWlb3h4b2iaWnQMfgrw";
         const expireTimeSeconds = 3600;
         onTokenReady(accessToken, expireTimeSeconds);
       }
     };
 
-    const documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bXlwbGFudDNkMjAyNTA5MDYvUENGJTIwV2VsZGluZy5ud2M'; // ganti dengan URN model kamu
+    const documentId = 'urn:dXJuOmFkc2sub2JqZWN0czpvcy5vYmplY3Q6bXlwbGFudDNkMjAyNTA5MDYvOTcwMDAubndk'; // ganti dengan URN model kamu
 
     Autodesk.Viewing.Initializer(options, () => {
       const viewerDiv = document.getElementById('forgeViewer');
